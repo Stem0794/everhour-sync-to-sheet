@@ -26,7 +26,7 @@ This Google Apps Script adds a custom menu to your spreadsheet, allowing you to 
 
 ### 1. Get your Everhour API key
 
-→ [https://everhour.dev/docs/#section/Authentication](https://everhour.dev/docs/#section/Authentication)
+→ [https://app.everhour.com/#/account/profile](https://app.everhour.com/#/account/profile)
 
 ### 2. Open your Google Sheet
 
@@ -58,7 +58,32 @@ li:abcd-1234...
 li:efgh-5678...
 ```
 
+You can find the project ID by clicking on a project in Everhour — it's in the URL (e.g. `https://app.everhour.com/#/projects/li:abcd-1234...`).
+
 4. Click OK — the tab will fill automatically.
+
+👉 Don’t forget to apply formatting:
+
+* Set columns B, C, D to currency format (€)
+* Set column E to percent format and reduce to 0 or 1 decimal
+
+---
+
+## 🧷 Embedding in Notion
+
+To view your synced budgets inside Notion:
+
+1. In Google Sheets, click **Share > Publish to the web**.
+2. Select **Entire Document** or just your budget tab, then click **Publish**.
+3. Copy the **public link** generated.
+4. In Notion:
+
+   * Type `/embed`
+   * Choose **Embed** block
+   * Paste your Google Sheets link
+   * Resize the block as needed
+
+> 🔒 Note: The sheet must be public (or at least visible to those with the link) for the embed to work.
 
 ---
 
@@ -73,7 +98,7 @@ li:efgh-5678...
 
 ---
 
-## 🧑‍💼 Author
+## 🧑‍💻 Author
 
 Made by me
 Feel free to fork, remix, or suggest improvements.
