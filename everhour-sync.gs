@@ -6,7 +6,6 @@
  * - Valid Everhour API key (replace `EVERHOUR_API_KEY`)
  * - Everhour projects must use `money`-based budgets
  * 
- * Author: [Your Name or Org]
  */
 
 const EVERHOUR_API_KEY = 'YOUR_API_KEY_HERE'; // Replace with your real Everhour API Key
